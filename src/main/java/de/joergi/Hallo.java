@@ -17,6 +17,10 @@ public class Hallo implements Serializable {
 	private String color;
 	
 	private Date testDate;
+	
+	public void showA4JonConsole(){
+		System.out.println("input " + input +  "testDate" + testDate );
+	}
 
 	public String getInput() {
 		return input;
