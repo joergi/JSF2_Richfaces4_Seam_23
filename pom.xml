@@ -8,6 +8,8 @@
 	<name>JavaServerFaces Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
+
+
 	<dependencies>
 
 		<dependency>
@@ -45,6 +47,42 @@
 			<version>1.0</version>
 		</dependency>
 
+
+
+
+
+		<!-- RICHFACES BEGINNING -->
+		<dependency>
+			<groupId>org.richfaces.core</groupId>
+			<artifactId>richfaces-core-impl</artifactId>
+			<version>4.0.0.Final</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.richfaces.core</groupId>
+			<artifactId>richfaces-core-api</artifactId>
+			<version>4.0.0.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.richfaces.ui</groupId>
+			<artifactId>richfaces-components-ui</artifactId>
+			<version>4.0.0.Final</version>
+		</dependency>
+				
+		<dependency>
+			<groupId>org.richfaces.ui</groupId>
+			<artifactId>richfaces-components-api</artifactId>
+			<version>4.0.0.Final</version>
+		</dependency>
+				
+
+		<!-- RICHFACES END -->
+
+
+
+
+
 	</dependencies>
 
 	<build>
@@ -56,8 +94,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.1</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 		</plugins>
