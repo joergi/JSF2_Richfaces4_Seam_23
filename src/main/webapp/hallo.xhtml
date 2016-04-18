@@ -9,9 +9,11 @@
 
 <h:head>
 	<title>JSF 2 Test</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" title="default" />
 </h:head>
 <h:body>
 	<h3>JSF 2.0 - Namenseingabe</h3>
+	<div id="formatter" >
 	<h:form id="name">
 		
 		<h:outputText value="Bitte gib dein namen ein" />
@@ -24,9 +26,9 @@
             
             <h:commandButton value="submit" action="ouput_name" />
             
-            <a4j:commandButton value="submita4j" action="#{hallo.showA4JonConsole()}"/>
+            <a4j:commandButton value="submita4j" action="#{hallo.showA4JonConsole}"/>
     </h:form>
-    
+    </div>
     
     
 </h:body>
