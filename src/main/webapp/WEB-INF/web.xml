@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	id="WebApp_ID" version="2.5">
+<web-app version="3.0" 
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+	
 
 	<display-name>JavaServerFaces</display-name>
 
@@ -38,6 +39,20 @@
 	</servlet-mapping>
 
 
+<!-- seam  2.3.1 -->
+		<listener>
+		    <listener-class>org.jboss.seam.servlet.SeamListener</listener-class>
+		</listener>
+		
+	
+	
+	<context-param>  
+         <param-name>javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER</param-name>  
+         <param-value>true</param-value>  
+    </context-param>  
+  
+		
+<!-- seam  2.3.1 -->
 
 	<security-constraint>
 		<display-name>Restrict raw XHTML Documents</display-name>
