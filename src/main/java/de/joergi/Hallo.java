@@ -3,11 +3,11 @@ package de.joergi;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import org.jboss.seam.annotations.AutoCreate;
+import org.jboss.seam.annotations.Name;
 
-@ManagedBean
-@SessionScoped
+@Name("hallo")
+@AutoCreate
 public class Hallo implements Serializable {
 
 	private static final long serialVersionUID = 1L;

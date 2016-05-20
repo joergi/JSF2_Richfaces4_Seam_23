@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	id="WebApp_ID" version="2.5">
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
 
 	<display-name>JavaServerFaces</display-name>
+
+	<listener>
+		<listener-class>org.jboss.seam.servlet.SeamListener</listener-class>
+	</listener>
+
+
 
 	<!-- Change to "Production" when you are ready to deploy -->
 	<context-param>
 		<param-name>javax.faces.PROJECT_STAGE</param-name>
 		<param-value>Development</param-value>
 	</context-param>
+
 
 	<!-- hallo as first page page -->
 	<welcome-file-list>
@@ -26,18 +33,53 @@
 	</servlet>
 
 	<!-- Map these files with JSF -->
-	
+
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.htm</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.html</url-pattern>
 	</servlet-mapping>
 
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>Faces Servlet</servlet-name> -->
+<!-- 		<url-pattern>*.seam</url-pattern> -->
+<!-- 	</servlet-mapping> -->
 
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>Seam Resource Servlet</servlet-name> -->
+<!-- 		<servlet-class>org.jboss.seam.servlet.SeamResourceServlet</servlet-class> -->
+<!-- 	</servlet> -->
+
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>Seam Resource Servlet</servlet-name> -->
+<!-- 		<url-pattern>/seam/resource/*</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+
+	<!-- seam 2.3.1 -->
+<!--    <filter> -->
+<!--         <filter-name>Seam Filter</filter-name> -->
+<!--         <filter-class>org.jboss.seam.servlet.SeamFilter</filter-class> -->
+<!--     </filter> -->
+
+<!--     <filter-mapping> -->
+<!--         <filter-name>Seam Filter</filter-name> -->
+<!--         <url-pattern>/*</url-pattern> -->
+<!--     </filter-mapping> -->
+
+
+<!-- 	<context-param> -->
+<!-- 		<param-name>javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER</param-name> -->
+<!-- 		<param-value>true</param-value> -->
+<!-- 	</context-param> -->
+
+
+	<!-- seam 2.3.1 -->
 
 	<security-constraint>
 		<display-name>Restrict raw XHTML Documents</display-name>
