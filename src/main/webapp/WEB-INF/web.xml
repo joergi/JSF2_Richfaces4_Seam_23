@@ -15,9 +15,9 @@
 
 	<!-- Change to "Production" when you are ready to deploy -->
 	<context-param>
-        <param-name>facelets.DEVELOPMENT</param-name>
-        <param-value>true</param-value>
-    </context-param>
+		<param-name>javax.faces.PROJECT_STAGE</param-name>
+		<param-value>Development</param-value>
+	</context-param>
 
 
 	<!-- hallo as first page page -->
@@ -44,39 +44,39 @@
 		<url-pattern>*.html</url-pattern>
 	</servlet-mapping>
 
-	<servlet-mapping>
-		<servlet-name>Faces Servlet</servlet-name>
-		<url-pattern>*.seam</url-pattern>
-	</servlet-mapping>
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>Faces Servlet</servlet-name> -->
+<!-- 		<url-pattern>*.seam</url-pattern> -->
+<!-- 	</servlet-mapping> -->
 
 
-	<servlet>
-		<servlet-name>Seam Resource Servlet</servlet-name>
-		<servlet-class>org.jboss.seam.servlet.SeamResourceServlet</servlet-class>
-	</servlet>
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>Seam Resource Servlet</servlet-name> -->
+<!-- 		<servlet-class>org.jboss.seam.servlet.SeamResourceServlet</servlet-class> -->
+<!-- 	</servlet> -->
 
-	<servlet-mapping>
-		<servlet-name>Seam Resource Servlet</servlet-name>
-		<url-pattern>/seam/resource/*</url-pattern>
-	</servlet-mapping>
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>Seam Resource Servlet</servlet-name> -->
+<!-- 		<url-pattern>/seam/resource/*</url-pattern> -->
+<!-- 	</servlet-mapping> -->
 
 
 	<!-- seam 2.3.1 -->
-   <filter>
-        <filter-name>Seam Filter</filter-name>
-        <filter-class>org.jboss.seam.servlet.SeamFilter</filter-class>
-    </filter>
+<!--    <filter> -->
+<!--         <filter-name>Seam Filter</filter-name> -->
+<!--         <filter-class>org.jboss.seam.servlet.SeamFilter</filter-class> -->
+<!--     </filter> -->
 
-    <filter-mapping>
-        <filter-name>Seam Filter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+<!--     <filter-mapping> -->
+<!--         <filter-name>Seam Filter</filter-name> -->
+<!--         <url-pattern>/*</url-pattern> -->
+<!--     </filter-mapping> -->
 
 
-	<context-param>
-		<param-name>javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER</param-name>
-		<param-value>true</param-value>
-	</context-param>
+<!-- 	<context-param> -->
+<!-- 		<param-name>javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER</param-name> -->
+<!-- 		<param-value>true</param-value> -->
+<!-- 	</context-param> -->
 
 
 	<!-- seam 2.3.1 -->
