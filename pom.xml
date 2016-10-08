@@ -112,8 +112,8 @@
 				<version>2.2</version>
 				<scope>provided</scope>
 			</dependency>
-				
-		
+
+
 		<!-- <dependency> -->
 		<!-- <groupId>org.hibernate</groupId> -->
 		<!-- <artifactId>hibernate-validator</artifactId> -->
@@ -156,20 +156,20 @@
 			<artifactId>dom4j</artifactId>
 			<version>1.6.1</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>6.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		 <dependency>
 	        <groupId>com.sun.facelets</groupId>
 	        <artifactId>jsf-facelets</artifactId>
 	        <version>1.1.15.B1</version>
 	    </dependency>
-    
+
 		<!-- seam error behebung -->
 
 
@@ -233,8 +233,8 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>4.3.5.Final</version>
 		</dependency>
-		
-		
+
+
 		<!--  jar adding -->
 		<dependency>
 			<groupId>log4j</groupId>
@@ -278,13 +278,13 @@
 			<artifactId>asm</artifactId>
 			<version>3.3.1</version>
 		</dependency>
-				
+
 		<dependency>
 			<groupId>org.jboss</groupId>
 			<artifactId>jboss-common-core</artifactId>
 			<version>2.5.0.Final</version>
 		</dependency>
-						
+
 
 	</dependencies>
 
@@ -316,10 +316,24 @@
 					<attachClasses>true</attachClasses>
 				</configuration>
 			</plugin>
-			
-			
-			
-			
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1</version>
+				<configuration>
+					<port>8080</port>
+					<path>/</path>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+			</plugin>
+
+
+
 		</plugins>
 	</build>
 </project>
