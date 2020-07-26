@@ -1,4 +1,7 @@
 # JSF2_Richfaces4_Seam_23
+
+## DO NOT USE THIS PROJECT FOR PRODUCTION USE. IT HAS SOME UNPATCHED VULNERABILITIES:. 
+
 Setup Project with JSF2, Richfaces 4, Seam 2.3.1 as a war project
 
 use Java 7 or 8 for this project    
